@@ -19,7 +19,7 @@
 	<property name="Parent" value="Players" />
 	<property name="CrouchYOffsetFP" value="-0.65" />
 	<property name="IsMale" value="true" />
-	<property name="TimeStayAfterDeath" value="10" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- This decides on the particle effect played on hit -->
 	<property name="SurfaceCategory" value="organic" />
 	<property name="PushFactor" value="5" />
@@ -126,7 +126,7 @@
 	<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain" />
 	<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath" />
 	<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
-	<property name="TimeStayAfterDeath" value="30" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<property name="AttackTimeoutDay" value="1.5" />
 	<!-- in s -->
 	<property name="AttackTimeoutNight" value="1.1" />
@@ -556,7 +556,7 @@
 	<property name="ExperienceGain" value="680"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="TimeStayAfterDeath" value="30" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<property name="DeadBodyHitPoints" value="80" /> <!-- For harvesting -->
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
 	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
@@ -621,7 +621,7 @@
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="0"/>
 	<property name="ParticleOnDestroy" value="blood_death" />
-	<property name="TimeStayAfterDeath" value="300" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4" />
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" />
@@ -662,7 +662,7 @@
 	<property name="ParticleOnDeath" value="blood_death" />
 	<property name="SoundHurt" value="Animals/stagpain" />
 	<property name="SoundDeath" value="Animals/stagdeath" />
-	<property name="TimeStayAfterDeath" value="300" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="false" />
 	<property name="ExperienceGain" value="425"/>
@@ -730,7 +730,7 @@
 	<property name="SoundSense" value="Animals/Bear/bearsense" />
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup" />
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-	<property name="TimeStayAfterDeath" value="300" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
 	<property name="ExperienceGain" value="2975"/>
@@ -796,7 +796,7 @@
 	<property name="SoundSense" value="Animals/Bear/bearsense" />
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup" />
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-	<property name="TimeStayAfterDeath" value="300" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
 	<property name="ExperienceGain" value="3400"/>
@@ -926,7 +926,7 @@
 	<property name="IsEnemyEntity" value="false" />
 	<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens" />
 	<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land" />
-	<property name="TimeStayAfterDeath" value="0" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<property name="SkinTexture" value="SupplyCrate/supply_crate_general" />
 	<!-- If set this entity shows on the map -->
 	<!--<property name="MapIcon" value="map_supply_crate" /> -->
@@ -981,7 +981,7 @@
 	<property name="AvatarController" value="AvatarZombieUMAController" />
 	<property name="PhysicsBody" value="zombieUMA" />
 	<property name="HasDeathAnim" value="false" />
-	<property name="TimeStayAfterDeath" value="45" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
@@ -1127,7 +1127,7 @@
 	<property name="Prefab" value="Backpack" />
 	<property name="Class" value="EntityBackpack" />
 	<property name="Parent" value="Backpack" />
-	<property name="TimeStayAfterDeath" value="1200" /> <!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
+	<property name="TimeStayAfterDeath" value="360000" /> <!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
 	<property name="IsEnemyEntity" value="false" />
 	<property name="LootListOnDeath" value="41" /> <!-- dropped backpack loot list -->
 </entity_class>
@@ -1185,7 +1185,7 @@
 	<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 	<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 	<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-	<property name="TimeStayAfterDeath" value="45" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- in s -->
 	<property name="LootListOnDeath" value="15" />
 	<property name="HasDeathAnim" value="true" />
@@ -1238,7 +1238,7 @@
 	<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
 	<property name="SoundLandHard" value="Player_Male/player1LandHard" />
 	<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-	<property name="TimeStayAfterDeath" value="45" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- in s -->
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
@@ -1300,7 +1300,7 @@
 	<property name="SoundHurt" value="malehatepain" />
 	<property name="SoundDeath" value="malehatedeath" />
 	<property name="SoundAttack" value="malehateattack" />
-	<property name="TimeStayAfterDeath" value="45" />
+	<property name="TimeStayAfterDeath" value="3600" />
 	<!-- in s -->
 	<property name="LootListOnDeath" value="71" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>

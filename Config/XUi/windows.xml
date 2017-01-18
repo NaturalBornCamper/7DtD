@@ -1,10 +1,26 @@
 <windows>
 	<window name="HUDLeftStatBars">
-		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >
+		<grid name="hud" pos="9,187" rows="4" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" controller="InGameHUD" side="left" >
+			<rect width="168" height="43" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" color="50,205,50,100" type="filled" height="37" width="162" fill="{StatFill}" />
+				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
+			</rect>
+			
+			<rect width="168" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3"  name="BarContent"  color="0,180,180,100" type="filled" height="37" width="162" fill="{StatFill}" />
+				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
+			</rect>
+			
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0"  />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="{StatFill}"  />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
@@ -12,13 +28,29 @@
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="{StatFill}" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 		</grid>
+<!--		
+		<grid name="hud" pos="187,48" rows="1" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" controller="InGameHUD" side="left" >
+			<rect width="168" height="43" controller="PlayerStatsWindow">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
+				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced"/>
+				<sprite depth="3" pos="3,-3"  color="50,50,50" type="filled" height="37" width="162" fill="100" />
+				<sprite depth="4" name="Icon" sprite="ui_game_symbol_temperature" size="32,32" pos="8,-6" foregroundlayer="true"/>
+				<label depth="6" name="TextContent" pos="0,-10" font_size="24" color="[beige]" justify="center" pivot="topleft" text="{playercoretemp}" height="30" />
+			</rect>
+		</grid>
+-->		
+		<rect width="100" height="92" pos="190,90">	
+			<sprite depth="1" pos="12,-48" size="32,32" sprite="ui_game_symbol_temperature" foregroundlayer="true" pivot="center"/>
+			<label depth="2" pos="68,-23" font_size="28" text="[DECEA3]{playercoretemp}[-]  " color="[white]" justify="right" pivot="center" effect="outline" upper_case="true" controller="PlayerStatsWindow"/>
+			<label depth="2" pos="98,-66" text="  {maptemperature}[-]" font_size="24" color="[white]" justify="left" pivot="center" effect="outline" upper_case="true" controller="MapStats"/>
+		</rect>
 		
-		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
 				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
 				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]"/>
@@ -105,10 +137,7 @@
 	<window name="windowCompass" style="compass.window" controller="CompassWindow">
 		<sprite style="compass.window.background.border"/>
 		<sprite style="compass.window.background"/>
-		
 		<sprite style="compass.window.compass.background">
-		
-			
 		</sprite>
 		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
 				
@@ -116,8 +145,15 @@
 		<sprite pos="200,-60" sprite="" color="255,255,255,255" globalopacitymod="1.8">
 			<label depth="2" width="300" height="30" text="{daytitle}: {day|always}  {timetitle}: {time|always}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
 		</sprite>
+		<rect width="100" height="43" pos="15,-20">
+			<label depth="2" pos="-25,0" font_size="24" width="172" text=" [DECEA3]{mapwind} MPH[-]  " color="[white]" justify="right" pivot="center" effect="outline" upper_case="true" controller="MapStats"/>
+		</rect>
+		<rect width="100" height="43" pos="385,-20">
+			<label depth="2" pos="25,0" font_size="24" text="  [DECEA3]{mapelevation} M[-]" color="[white]" justify="left" pivot="center" effect="outline" upper_case="true" controller="MapStats"/>
+		</rect>
 	</window>
-	
+
+
 	<window name="windowCraftingList"  width="397" height="688" controller="CraftingListInfo" panel="Left">
 		
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
@@ -588,6 +624,17 @@
 				<item_stack name="0"/>
 			</grid>
 		</rect>
+
+		<panel>
+			<label depth="2" pos="9, -12" text="1" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="84, -12" text="2" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="159, -12" text="3" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="234, -12" text="4" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="309, -12" text="5" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="384, -12" text="6" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="459, -12" text="7" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+			<label depth="2" pos="534, -12" text="8" font_size="20" color="[white]" pivot="center" effect="outline" upper_case="true" justify="center"/>
+		</panel>
 	</window>
 	
 	<window name="CharacterFrameWindow" width="327" height="704" panel="Left" controller="CharacterFrameWindow" defaultcolor="[white]" hoveredcolor="[selectedColor]" >
