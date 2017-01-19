@@ -926,7 +926,7 @@
 	<property name="IsEnemyEntity" value="false" />
 	<property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens" />
 	<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land" />
-	<property name="TimeStayAfterDeath" value="3600" />
+	<property name="TimeStayAfterDeath" value="0" />
 	<property name="SkinTexture" value="SupplyCrate/supply_crate_general" />
 	<!-- If set this entity shows on the map -->
 	<!--<property name="MapIcon" value="map_supply_crate" /> -->
