@@ -513,7 +513,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="3" />
+		<property name="DamageBonus.head" value="7" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="2" />
 		<property name="DamageBonus.earth" value=".2" />
@@ -567,7 +567,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="3" />
+		<property name="DamageBonus.head" value="7" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="2" />
 		<property name="DamageBonus.earth" value=".2" />
@@ -624,7 +624,7 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="4" />
+		<property name="DamageBonus.head" value="7" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -681,7 +681,7 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20" />
 		<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-		<property name="DamageBonus.head" value="3" />
+		<property name="DamageBonus.head" value="6" />
 		<property name="DamageBonus.wood" value="5" />
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.glass" value="25" />
@@ -1901,7 +1901,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="17" />
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true" />
-		<property name="EntityDamage" value="3.6,9" />
+		<property name="EntityDamage" value="11,20" />
 		<property name="BlockDamage" value="5.4,13.5" />
 	</property>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
@@ -2444,8 +2444,8 @@ which does not exist, yet. -->
 	<property name="PartType" value="Stock" />
 	<property name="Weight" value="10" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="10,10" />
-		<property name="DegradationMax" value="700,4000" />
+		<property name="DegradationRate" value="5,5" />
+		<property name="DegradationMax" value="1400,8000" />
 	</property>
 	<property name="EconomicValue" value="412" />
 </item>
@@ -2456,7 +2456,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="20" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="17,50" />
-		<property name="DegradationMax" value="700,4000" />
+		<property name="DegradationMax" value="1400,8000" />
 	</property>
 	<property name="EconomicValue" value="412" />
 </item>
@@ -2467,7 +2467,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="10" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.01" />
-		<property name="DegradationMax" value="700,4000" />
+		<property name="DegradationMax" value="1400,8000" />
 	</property>
 	<property name="EconomicValue" value="412" />
 </item>
@@ -2479,7 +2479,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="EntityDamage" value="11.4, 19" />
 		<property name="BlockDamage" value="5,13" />
-		<property name="DegradationMax" value="700,4000" />
+		<property name="DegradationMax" value="1400,8000" />
 	</property>
 	<property name="EconomicValue" value="412" />
 </item>
@@ -2490,8 +2490,8 @@ which does not exist, yet. -->
 	<property name="PartType" value="Stock" />
 	<property name="Weight" value="15" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="16,34" />
-		<property name="DegradationMax" value="2000,10000" />
+		<property name="DegradationRate" value="8,17" />
+		<property name="DegradationMax" value="4000,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2502,7 +2502,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="10" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="17,50" />
-		<property name="DegradationMax" value="2000,10000" />
+		<property name="DegradationMax" value="4000,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2513,7 +2513,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="10" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.05" />
-		<property name="DegradationMax" value="2000,10000" />
+		<property name="DegradationMax" value="4000,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2525,7 +2525,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="EntityDamage" value="35.2,88" />
 		<property name="BlockDamage" value="10,24" />
-		<property name="DegradationMax" value="2000,10000" />
+		<property name="DegradationMax" value="4000,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2538,8 +2538,8 @@ which does not exist, yet. -->
 	<property name="Weight" value="15" />
 	<property name="FuelValue" value="10" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="9,9" />
-		<property name="DegradationMax" value="800,3600" />
+		<property name="DegradationRate" value="4.5,4.5" />
+		<property name="DegradationMax" value="1600,7200" />
 	</property>
 	<property name="EconomicValue" value="525" />
 </item>
@@ -2550,7 +2550,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="25" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="22,66" />
-		<property name="DegradationMax" value="800,3600" />
+		<property name="DegradationMax" value="1600,7200" />
 	</property>
 	<property name="EconomicValue" value="525" />
 </item>
@@ -2561,7 +2561,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="15" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.08" />
-		<property name="DegradationMax" value="800,3600" />
+		<property name="DegradationMax" value="1600,7200" />
 	</property>
 	<property name="EconomicValue" value="525" />
 </item>
@@ -2571,7 +2571,7 @@ which does not exist, yet. -->
 	<property name="PartType" value="Barrel" />
 	<property name="Weight" value="20" />
 	<property class="Attributes">
-		<property name="DegradationMax" value="800,3600" />
+		<property name="DegradationMax" value="1600,7200" />
 	</property>
 	<property name="EconomicValue" value="525" />
 </item>
@@ -2584,7 +2584,7 @@ which does not exist, yet. -->
 	<property name="FuelValue" value="24" />
 	<property class="Attributes">
 		<property name="DegradationRate" value="9,9" />
-		<property name="DegradationMax" value="800,3600" />
+		<property name="DegradationMax" value="1600,7200" />
 	</property>
 	<property name="EconomicValue" value="675" />
 </item>
@@ -2594,7 +2594,7 @@ which does not exist, yet. -->
 	<property name="PartType" value="Barrel" />
 	<property name="Weight" value="30" />
 	<property class="Attributes">
-		<property name="DegradationMax" value="800,3600" />
+		<property name="DegradationMax" value="1600,7200" />
 	</property>
 	<property name="EconomicValue" value="675" />
 </item>
@@ -2605,8 +2605,8 @@ which does not exist, yet. -->
 	<property name="PartType" value="Stock" />
 	<property name="Weight" value="25" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="13,18" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationRate" value="6.5,9" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2617,7 +2617,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="25" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="24,72" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2629,7 +2629,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="15" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.05" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2645,7 +2645,7 @@ which does not exist, yet. -->
 		<property name="DismembermentBaseChance" value="0.0,0.15"/>
 		<property name="DismembermentBonus" value="0,0"/>
 		-->
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1125" />
 </item>
@@ -2656,8 +2656,8 @@ which does not exist, yet. -->
 	<property name="PartType" value="Stock" />
 	<property name="Weight" value="30" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="12,16" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationRate" value="6,8" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2668,7 +2668,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="30" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="30,90" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2679,7 +2679,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="15" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.05" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2692,7 +2692,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="EntityDamage" value="28,70" />
 		<property name="BlockDamage" value="4,9.5" />
-		<property name="DegradationMax" value="2250,10000" />
+		<property name="DegradationMax" value="4500,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2707,8 +2707,8 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="DismembermentBaseChance" value="0.1,0.25"/>
 		<property name="DismembermentBonus" value="0,0.00045"/>
-		<property name="DegradationRate" value="10,15" />
-		<property name="DegradationMax" value="1500,5000" />
+		<property name="DegradationRate" value="5,7.5" />
+		<property name="DegradationMax" value="3000,10000" />
 	</property>
 </item>
 <item id="243" name="partsHuntingRifle_receiver">
@@ -2718,7 +2718,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="30" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="54,160" />
-		<property name="DegradationMax" value="1500,5000" />
+		<property name="DegradationMax" value="3000,10000" />
 	</property>
 </item>
 <item id="244" name="partsHuntingRifle_parts">
@@ -2729,7 +2729,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="15" />
 	<property class="Attributes">
 		<property name="Accuracy" value=".7,0.01" />
-		<property name="DegradationMax" value="1500,5000" />
+		<property name="DegradationMax" value="3000,10000" />
 	</property>
 </item>
 <item id="245" name="partsHuntingRifle_barrel">
@@ -2740,7 +2740,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="EntityDamage" value="30,75" />
 		<property name="BlockDamage" value="6,14" />
-		<property name="DegradationMax" value="1500,5000" />
+		<property name="DegradationMax" value="3000,10000" />
 	</property>
 </item>
 
@@ -2752,8 +2752,8 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="DismembermentBaseChance" value="0.1,0.3"/>
 		<property name="DismembermentBonus" value="0,0.00050"/>
-		<property name="DegradationRate" value="15,21" />
-		<property name="DegradationMax" value="1700,7000" />
+		<property name="DegradationRate" value="7.5,10.5" />
+		<property name="DegradationMax" value="3400,14000" />
 	</property>
 	<property name="EconomicValue" value="875" />
 </item>
@@ -2764,7 +2764,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="30" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="54,160" />
-		<property name="DegradationMax" value="1700,7000" />
+		<property name="DegradationMax" value="3400,14000" />
 	</property>
 	<property name="EconomicValue" value="875" />
 </item>
@@ -2776,7 +2776,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="15" />
 	<property class="Attributes">
 		<property name="Accuracy" value=".6,0.01" />
-		<property name="DegradationMax" value="1700,7000" />
+		<property name="DegradationMax" value="3400,14000" />
 	</property>
 	<property name="EconomicValue" value="875" />
 </item>
@@ -2788,7 +2788,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="EntityDamage" value="27.6,69" />
 		<property name="BlockDamage" value="6,14" />
-		<property name="DegradationMax" value="1700,7000" />
+		<property name="DegradationMax" value="3400,14000" />
 	</property>
 	<property name="EconomicValue" value="875" />
 </item>
@@ -2799,8 +2799,8 @@ which does not exist, yet. -->
 	<property name="PartType" value="Stock" />
 	<property name="Weight" value="35" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="50,50" />
-		<property name="DegradationMax" value="2500,10000" />
+		<property name="DegradationRate" value="25,25" />
+		<property name="DegradationMax" value="5000,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2811,7 +2811,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="35" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="15,70" />
-		<property name="DegradationMax" value="2500,10000" />
+		<property name="DegradationMax" value="5000,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2822,7 +2822,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="20" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.01" />
-		<property name="DegradationMax" value="2500,10000" />
+		<property name="DegradationMax" value="5000,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2834,7 +2834,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,42" />
 		<property name="EntityDamage" value="12, 90" /> <!-- xxx is this working? -->
-		<property name="DegradationMax" value="2500,10000" />
+		<property name="DegradationMax" value="5000,20000" />
 	</property>
 	<property name="EconomicValue" value="1500" />
 </item>
@@ -2858,7 +2858,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="10" />
 	<property class="Attributes">
 		<property name="FalloffRange" value="2.35,2.35" />
-		<property name="DegradationMax" value="3000,6000" />
+		<property name="DegradationMax" value="6000,12000" />
 	</property>
 </item>
 <item id="262" name="partsChainsaw_blade">
@@ -2871,7 +2871,7 @@ which does not exist, yet. -->
 		<property name="Accuracy" value="1, 0.01" />
 		<property name="DismembermentBaseChance" value=".2,.3"/>
 		<property name="DismembermentBonus" value="0,0.00036"/>
-		<property name="DegradationMax" value="3000,6000" />
+		<property name="DegradationMax" value="6000,12000" />
 	</property>
 	<!-- 15.0 workaround. Should be Science -->
 	<property name="Group" value="Resources,Tools/Traps" />
@@ -2883,7 +2883,7 @@ which does not exist, yet. -->
 	<property class="Attributes">
 		<property name="FalloffRange" value="4,4" />
 		<property name="DegradationRate" value="1,1" />
-		<property name="DegradationMax" value="3000,6000" />
+		<property name="DegradationMax" value="6000,12000" />
 	</property>
 </item>
 <item id="266" name="partsAuger_blade">
@@ -2894,7 +2894,7 @@ which does not exist, yet. -->
 		<property name="EntityDamage" value="3,10" />
 		<property name="BlockDamage" value="18,44" />
 		<property name="Accuracy" value="1, 0.01" />
-		<property name="DegradationMax" value="3000,6000" />
+		<property name="DegradationMax" value="6000,12000" />
 	</property>
 	<!-- 15.0 workaround. Should be Science -->
 	<property name="Group" value="Resources,Tools/Traps" />
@@ -3006,8 +3006,8 @@ which does not exist, yet. -->
 	<property name="Material" value="Mplastics" />
 	<property name="Weight" value="8" />
 	<property class="Attributes">
-		<property name="DegradationRate" value="5,5" />
-		<property name="DegradationMax" value="1000,4000" />
+		<property name="DegradationRate" value="2.5,2.5" />
+		<property name="DegradationMax" value="2000,8000" />
 	</property>
 	<property name="EconomicValue" value="300" />
 </item>
@@ -3018,7 +3018,7 @@ which does not exist, yet. -->
 	<property name="Material" value="metal" />
 	<property name="Weight" value="27" />
 	<property class="Attributes">
-		<property name="DegradationMax" value="1000,4000" />
+		<property name="DegradationMax" value="2000,8000" />
 	</property>
 	<property name="EconomicValue" value="300" />
 </item>
@@ -3030,7 +3030,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="10" />
 	<property class="Attributes">
 		<property name="Accuracy" value="1,0.01" />
-		<property name="DegradationMax" value="1000,4000" />
+		<property name="DegradationMax" value="2000,8000" />
 	</property>
 	<property name="EconomicValue" value="300" />
 </item>
@@ -3041,7 +3041,7 @@ which does not exist, yet. -->
 	<property name="Material" value="lead" />
 	<property name="Weight" value="15" />
 	<property class="Attributes">
-		<property name="DegradationMax" value="1000,4000" />
+		<property name="DegradationMax" value="2000,8000" />
 	</property>
 	<property name="EconomicValue" value="300" />
 </item>
