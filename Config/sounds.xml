@@ -636,10 +636,16 @@
   
   <SoundDataNode name="pump_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
     <Noise range="50" prio="1" time="1" heat_map_strength="0.3" heat_map_time="120" />
+	<!--
     <AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire1"/>
     <AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire2"/>
     <AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire3"/>
     <AudioClip ClipName="Sounds/Weapons/Ranged/pumpshotgun/pump_shotgun_fire4"/>
+	-->
+    <AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire1"/>
+    <AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire2"/>
+    <AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire3"/>
+    <AudioClip ClipName="Sounds/Weapons/Ranged/blunderbuss/blunderbuss_fire4"/>
     <LocalCrouchVolumeScale name="1" /> <CrouchNoiseScale name="1" /> <NoiseScale name="1" /> <MaxVoices name="5" /> <MaxEntities name="30" /> <MaxRepeatRate name="0.8" /> </SoundDataNode>
   
   
