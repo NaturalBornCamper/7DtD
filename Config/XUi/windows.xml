@@ -1,6 +1,10 @@
+<!-- A15.1 stable (b16) also works with A15.1 experimental -->
 <windows>
 	<window name="HUDLeftStatBars">
+<!-- changed cols="1" to cols ="2"
 		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >
+-->
+		<grid name="hud" pos="9,98" rows="2" cols="2" width="168" cell_width="168" cell_height="46" repeat_content="false" controller="InGameHUD" side="left" >
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
@@ -8,6 +12,12 @@
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
+<!-- added water display, next 4 lines-->			
+			<panel height="30" width="340" disableautobackground="true">
+				<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-11" sprite="ui_game_symbol_water" color="[white_quarter_alpha]"/>
+				<label depth="1" width="200" pos="30,-10" name="lblWater" font_size="24" text="{playerwater}%" controller="PlayerStatsWindow" effect="outline"/>
+			</panel>
+<!-- end of section additions for water-->
 			
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
@@ -16,7 +26,13 @@
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 			</rect>
+<!-- added food display, next 4 lines -->			
+			<panel height="30" width="340" disableautobackground="true">
+				<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-11" sprite="ui_game_symbol_fork" color="[white_quarter_alpha]"/>
+				<label depth="1" width="200" pos="30,-10" name="lblFood" font_size="24" text="{playerfood}%" controller="PlayerStatsWindow" effect="outline"/>
+			</panel>
 		</grid>
+<!-- end of section additions for food-->
 		
 		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
@@ -103,6 +119,41 @@
 	</window>
 	
 	<window name="windowCompass" style="compass.window" controller="CompassWindow">
+<!-- add displays for wind, temp, coordinates -->
+			<sprite depth="2" style="icon22px" pos="-190,-15" sprite="ui_game_symbol_wind" color="[white_quarter_alpha]"/>
+			<label depth="2" pos="-160,-15" width="75" text="{mapwind}MPH" font_size="22" justify="left" controller="MapStats" effect="outline"/>
+			<sprite depth="2" style="icon22px" pos="-105,-15" sprite="ui_game_symbol_temperature" color="[white_quarter_alpha]"/>
+			<label depth="2" pos="-80,-15" width="75" text="{playercoretemp}" font_size="22" justify="left" controller="PlayerStatsWindow" effect="outline"/>
+			<label depth="2" pos="-20,-15" width="75" text="/" font_size="22" justify="left" effect="outline"/>
+			<label depth="2" pos="-5,-15" width="75" text="{maptemperature}" font_size="22" justify="left" controller="MapStats" effect="outline"/>			
+			<rect controller="MapArea">
+<!-- not displayed next line, but required or error -->
+				<sprite depth="2" name="playerIcon" style="icon32px" pos="4,999" height="0" sprite="ui_game_symbol_map_player_arrow"/>
+				<label depth="2" name="playerPos" pos="365,-15" width="200" height="22" text="110 S" font_size="22" justify="left" effect="outline"/>
+				<sprite depth="2" style="icon22px" pos="475,-15" sprite="ui_game_symbol_climb" color="[white_quarter_alpha]" />
+				<label depth="2" width="75" pos="500,-15" font_size="22" text="{mapelevation}" effect="outline" justify="left" controller="MapStats" />
+<!-- below aren't visible, but fails without info here -->
+				<sprite name="bedrollIcon" style="icon32px" pos="200,999" height="0" />
+				<label name="bedrollPos" pos="246,999" height="28"/>
+				<sprite name="cursorIcon" style="icon32px" pos="390,999" height="0" />
+				<label name="cursorPos" pos="434,999" height="28"/>
+				<sprite name="waypointIcon" style="icon32px" pos="562,999" height="0" />
+				<label name="waypointDistance" pos="586,999" height="28"/>				
+				<panel name="mapView" width="1" height="0" pos="6,999" disableautobackground="true">
+					<texture name="mapViewTexture" width="1" height="0" pos="0,999" material="Materials/MaskableMainmap"/>				
+					<panel name="clippingPanel" width="1" height="0" pos="0,999" disableautobackground="true" />
+				</panel>
+			</rect>
+<!-- to here they do nothing -->						
+<!-- add player level with bar -->
+			<sprite depth="2" style="icon22px" pos="540,-15" sprite="ui_game_symbol_trophy" color="[white_quarter_alpha]"/>
+			<label depth="2" pos="565,-15" width="75" text="{playerleveltitle}: [DECEA3]{playerlevel}[-]" font_size="22" justify="left" controller="PlayerStatsWindow" effect="outline"/>			
+			<sprite depth="2" width="107" pos="635, -22" height="10" type="sliced" color="[black]" />
+			<sprite depth="2" width="105" pos="636, -22" height="8" type="sliced" color="[lightGrey_quarter_alpha]" />
+			<sprite depth="2" width="105" pos="636, -22" height="8" type="filled" color="49,91,203" fill="{playerlevelfill}" controller="PlayerStatsWindow"/>
+			<sprite pos="760,-15" depth="2" style="icon22px" sprite="ui_game_symbol_skills" color="[white_quarter_alpha]" />
+			<label pos="785, -15" depth="2" width="200" text="{skillpointsavailable}" font_size="22" color="[white_quarter_alpha]" effect="outline" controller="SkillInfoWindow"/>
+<!-- end of player level with bar (end of edits) -->
 		<sprite style="compass.window.background.border"/>
 		<sprite style="compass.window.background"/>
 		
