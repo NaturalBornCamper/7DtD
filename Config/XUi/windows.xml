@@ -47,8 +47,8 @@
 				<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-11" sprite="ui_game_symbol_fork" color="[white_quarter_alpha]"/>
 				<label depth="1" width="200" pos="30,-10" name="lblFood" font_size="24" text="{playerfood}%" controller="PlayerStatsWindow" effect="outline"/>
 			</panel>
-		</grid>
 end of section additions for food-->
+		</grid>
 		
 		<rect name="hud" pos="93,210" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
